@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/goozgooz/lab-07-http-server/issues"
   },
-  "homepage": "https://github.com/goozgooz/lab-07-http-server#readme"
+  "homepage": "https://github.com/goozgooz/lab-07-http-server#readme",
+  "dependencies": {
+    "cowsay": "^1.2.1",
+    "query-string": "^5.0.0"
+  }
 }
