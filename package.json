@@ -4,7 +4,7 @@
   "description": "![cf](https://i.imgur.com/7v5ASc8.png) Lab 07: Vanilla HTTP Server ======",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,9 @@
   "homepage": "https://github.com/goozgooz/lab-07-http-server#readme",
   "dependencies": {
     "cowsay": "^1.2.1",
-    "query-string": "^5.0.0"
+    "expect": "^21.2.1",
+    "mocha": "^4.0.1",
+    "query-string": "^5.0.0",
+    "superagent": "^3.6.3"
   }
 }

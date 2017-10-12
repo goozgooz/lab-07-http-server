@@ -4,9 +4,9 @@ const http = require('http');
 const url = require('url');
 const cowsay = require('cowsay');
 const querystring = require('querystring');
-const bodyParser = require('./body-parser.js');
+const bodyParser = require('./lib/body-parser.js');
 
-const server = http.createServer((req, res) => {
+const server = module.exports = http.createServer((req, res) => {
   req.url = url.parse(req.url);
 
   if(req.method === 'GET'  && req.url.pathname === '/') {
@@ -27,9 +27,9 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(3000, () => {
-  console.log('server up on 3000');
-});
+// server.listen(3000, () => {
+//   console.log('server up on 3000');
+// });
 
 
 let sendCowResponse = (res, status, body) => {
